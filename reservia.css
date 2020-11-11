@@ -5,8 +5,9 @@
 body
 {
     font-family: "Raleway", "Trebuchet";
-    width: 1024px;
+    width: 100%;
     margin: auto;
+
 }
 /* Bandeau-nav*/
 .navbar
@@ -78,7 +79,7 @@ nav ul
     background-color: #F2F2F2 ;
     width: 35px;
     height:35px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 6px 0 0 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,10 +87,11 @@ nav ul
 
 .bouton input
 {
-  color: white;
+  border:2px solid #F2F2F2;
+  height:35px;
 }
 
-/* FILTRE */
+/* filtres */
 
 .filtres ul
 {
@@ -124,7 +126,46 @@ nav ul
     border-radius: 50%;
     margin-right: 15px;
 }
-.filtres p
+.filtres
 {
-    font-weight: bold;
+    display: flex;
+    font-weight:bold;
+    align-items:center;
+}
+
+/*information*/
+.info
+{
+    display: flex;
+    align-items: center;
+    font-size: 0.85em;
+}
+.info i
+{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:#0065FC;
+    margin-right: 15px;
+}  
+/*hébergement*/
+.section_hebergement img
+{
+    width: max(100px, 100px);  
+}
+article
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.article_hebergement
+{
+   background-color:#F2F2F2;
 }
