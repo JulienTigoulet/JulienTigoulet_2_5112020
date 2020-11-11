@@ -1,0 +1,62 @@
+/* Police*/
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway_police/static/Raleway-Regular.ttf');
+    src: url('Raleway_police/static/Raleway-Thin.ttf');
+    src: url('Raleway_police/static/Raleway-ThinItalic.ttf');
+    src: url('Raleway_police/static/Raleway-Bold.ttf');
+    src: url('Raleway_police/static/Raleway-SemiBold.ttf');
+    src: url('Raleway_police/static/Raleway-SemiBoldItalic.ttf');
+    src: url('Raleway_police/static/Raleway-LightItalic.ttf');
+    src: url('Raleway_police/static/Raleway-Italic.ttf');
+    src: url('Raleway_police/static/Raleway-Light.ttf');
+    src: url('Raleway_police/static/Raleway-Medium.ttf');
+    src: url('Raleway_police/static/Raleway-ExtraLight.ttf');
+    src: url('Raleway_police/static/Raleway-ExtraLightItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    font-family: 'Raleway', Trebuchet;
+    width: 1024px;
+}
+/* Bandeau-header*/
+.Logo
+{
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+}
+
+nav a
+{
+text-decoration: none;
+}
+nav a:hover
+{
+    color:#0065FC;
+    border-bottom:2px solid#DEEBFF;
+}
+
+nav li
+{
+    list-style-type: none;
+    padding:20px;
+ 
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;   
+}
+
+
+aside{
+    background-color: cadetblue;
+}
+section{
+    background-color: coral;
+}
