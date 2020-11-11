@@ -13,44 +13,80 @@
  <!-- BANDEAU Header -->
     <header>
         <div id="Bandeau">
-            <div class="Logo">
+            <div class="navbar">
                 <img src="images/logo/Reservia.svg" alt="logo reservia">
             
-              <div class="Navigation">
-                 <nav>
-                     <ul>
-                          <li><a href="#">Hébergement</a></li>
-                         <li><a href="#">Activités</a></li>
-                         <li><a href="#">S'inscrire</a></li>
-                     </ul>
-                </nav>
-             </div>
+                <div class="Navigation">
+                    <nav>
+                         <ul>
+                             
+                            <li><a href="#">Hébergement</a></li>
+                            <li><a href="#">Activités</a></li>
+                            <li><a href="#">S'inscrire</a></li>
+                         </ul>
+                    </nav>
+                </div>
             </div>
          
             <div class="texte_bandeau">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="Bouton">
-                <label for="search">Rechercher</label>
-                <input type="search"id="search" name="search" required
+
+           
+            <div class="bouton">
+                <div class="bouton_rechercher">
+                    <label for="search">Rechercher</label>
+                </div>
+                <div class="bouton_input">
+                    <input type="search"id="search" name="search" required
                 minlength="4" maxlength="8" size="10">
-         
+                </div>
+                <div class="bouton_i">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>      
             </div>
         </div>
-                <div class="Filtres">
-                    <ul>
-                            <li><i class="fas fa-money-bill-wave"></i> Economique</li>
-                            <li><i class="fas fa-child"></i> Familial</li>
-                            <li><i class="fas fa-heart"></i> Romantique</li>
-                            <li><i class="fas fa-dog"></i> Animaux autorisé</li>
-                    </ul>
-                </div>
 
-                <div class="info">
-                <i class="fas fa-info"></i> <p>Plus de 500 logement disponible dans cette ville</p>
-                </div>
+        <div class="filtres">
+            <ul>
+                <li>
+                    <div>
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+             
+                    <p>Économique</p>
+
+                 
+                </li>
+                <li>
+                    <div>
+                        <i class="fas fa-child"></i> 
+                    </div>
+                    <p>Familial</p>
+                
+                </li>
+                <li>
+                    <div>
+                       <i class="fas fa-heart"></i> 
+                    </div>
+                    <p>Romantique </p>
+                        
+                   
+                </li>
+                <li>
+                    <div>
+                       <i class="fas fa-dog"></i> 
+                    </div>
+                    <p>Animaux autorisés</p>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <i class="fas fa-info"></i> <p>Plus de 500 logement disponible dans cette ville</p>
+        </div>
     </header>
 
 <!--Section article aside-->
