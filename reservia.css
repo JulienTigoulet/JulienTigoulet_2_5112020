@@ -6,8 +6,6 @@ body
 {
     font-family: "Raleway", "Trebuchet";
     width: 100%;
-    margin: auto;
-
 }
 /* Bandeau-nav*/
 .navbar
@@ -152,20 +150,50 @@ nav ul
     color:#0065FC;
     margin-right: 15px;
 }  
-/*hébergement*/
-.section_hebergement img
-{
-    width: max(100px, 100px);  
-}
-article
+/*Section*/
+section
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
-    
 }
+/*hébergement article*/
 .article_hebergement
 {
-   background-color:#F2F2F2;
+    background-color: #F2F2F2;
+    padding:1.25em;
+    border-radius:12px;  
+}
+article
+{ 
+    columns:3;
+    padding: 1.25em;
+
+}
+.card_heberg
+{
+    height:auto;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin-bottom: 1.25em;
+    border-radius:12px;   
+}
+.img_heberg img
+{
+    height:5em;
+    width: 10em;
+    padding-top:1.25em;  
+}
+.legend_heberg
+{
+
+}
+aside
+{
+    background-color: #F2F2F2;
 }
