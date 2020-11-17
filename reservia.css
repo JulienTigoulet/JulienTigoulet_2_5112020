@@ -7,6 +7,11 @@ body
     font-family: "Raleway", "Trebuchet";
     width: 100%;
 }
+a
+{
+    text-decoration: none;
+    color:black;
+}
 /* Bandeau-nav*/
 .navbar
 {
@@ -14,30 +19,35 @@ body
     flex-direction: row;
     justify-content:space-between;
 }
-
 nav a
 {
     text-decoration: none;
-    color:#0065FC;
+    color:black;
+    padding-top:35px;
+    margin-top:10px;
+    padding-left:25px;
+    padding-right:25px; 
 }
 nav a:hover
 {
     color:#0065FC;
-    border-bottom:4px solid#DEEBFF;
+    border-top:3px solid#0065FC;
+    transition:all 200ms;
 }
-
 nav li
-
 {
     list-style-type: none;
-    padding:20px;
+    margin:20px;
 }
-
 nav ul
 {
     display: flex;
-    flex-direction: row;
+    align-items: flex-end;
     color:#106FFC;   
+}
+nav b
+{
+    color:#0065FC;
 }
 
 /*Bandeau texte*/
@@ -99,15 +109,22 @@ nav ul
 
 .filtres li
 {
-    border:2px solid #F2F2F2;
+    border-top:2px solid #F2F2F2;
+    border-bottom:2px solid #F2F2F2;
+    border-right:2px solid #F2F2F2;
     border-radius:45px;
     display: flex;
     align-items: center;
     margin-left: 30px;
     padding-right: 10px;
-    height: 30px;
+    height: 36px;
 }
-
+.filtres li:hover
+{
+    background-color:#F2F2F2;
+    transition: all 250ms;
+    border:3px solid #0065FC;
+}
 .filtres i
 {  
     color: #0065FC;
@@ -116,8 +133,8 @@ nav ul
 .filtres div
 {
     background-color:#DEEBFF;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,13 +167,24 @@ nav ul
     color:#0065FC;
     margin-right: 15px;
 }  
+
+/*Header*/
+header
+{
+    margin-left:30px;
+}
 /*Section*/
-section
+#section_hebergement section
 {
     display: flex;
     justify-content: space-around;
     padding:1.25em;
 
+}
+#activite section
+{
+    display: flex;
+    padding: 1.25em;
 }
 /*Aside*/
 .texte_aside_font
@@ -222,10 +250,12 @@ article
 {
     font-size:0.85em;
     margin-left:30px;
+    margin-bottom:5px;
 }
 .article_hebergement h2
 {
-    font-size:0.8em;
+    font-size:1.1em;
+    font-weight: bold;
     margin-left: 30px;
 }
 .card_heberg
@@ -263,7 +293,7 @@ article
 /*stars*/
 .stars_blue
 {
-    color:#0065FC;//   
+    color:#0065FC;
 }
 .stars_grey
 {
@@ -282,58 +312,96 @@ article
 footer
 {
     background-color:#F2F2F2;
-    columns:3;
-    padding:2.2em;
+    display: flex;
 }
 footer section
 {
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
-    justify-content: center;
-    height: 180px;
+    align-items: flex-start;
+    margin-right:140px;
+    padding:1.25em;
 }
 footer li
 {
     list-style-type: none;
-    padding:0.3em;    
+    padding:0.4em;
 }
-
 footer h1
 {
-    font-size:1.1em;
-    margin-left:48px;
-    margin-top: 15px;
+    font-size:1em;
+    margin-left:45px;
+    margin-bottom:0;
 }
 
 /*Activité Section*/
-.activite
+.activite_h1
+{
+    font-size:0.6em;
+    position: relative;
+    top:25px;
+    left:35px;
+}
+#activite
 {
     display: flex;
-    background-color:blue;
+    align-items: center;
 }
-.activite article
+#activite article
 {
     display: flex;
-    justify-content: space-between;
 }
+.activite_card p
+{
+    font-weight: bold;
+    margin-left:9px;
+}
+.activite_card img
+{
+    border-radius:1.25em 1.25em 0 0;
+}
+/*Size card activite*/
 .activite_card_haute
 {
     width: 300px;
     height: 450px;
+    background: white;
+    border-radius:1.25em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    margin:1.25em;
 }
-.activite_card
+.activite_card_medium
 {
     width:235px ;
-    height:300px ;
+    height:230px ;
+    background-color:white;
+    margin:1.25em;
+    border-radius:1.25em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    margin:1.25em;
+}
+.activite_card_small
+{
+    width:235px ;
+    height:165px ;
+    background-color:white;
+    margin:1.25em;
+    border-radius:1.25em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    margin:1.25em;
 }
 .activite_card_haute img
 {
     width:300px ;
     height:390px;
 }
-.activite_card img
+.activite_card_medium img
 {
-    width:300px ;
+    width:235px ;
     height:175px ;
+}
+.activite_card_small img
+{
+    height:110px ;
+    width:235px;
 }
