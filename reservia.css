@@ -1,17 +1,26 @@
 /* Police*/
   
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-
+*
+{
+    padding:0;
+    margin:0;
+}
 body
 {
     font-family: "Raleway", "Trebuchet";
-    width: 100%;
 }
 a
 {
     text-decoration: none;
     color:black;
 }
+.page
+{
+    max-width: 1350px;
+    margin:auto;
+}
+
 /* Bandeau-nav*/
 .navbar
 {
@@ -169,22 +178,15 @@ nav b
 }  
 
 /*Header*/
-header
-{
-    margin-left:30px;
-}
 /*Section*/
-#section_hebergement section
+#section_hebergement
 {
     display: flex;
-    justify-content: space-around;
-    padding:1.25em;
-
+    justify-content: space-between;
 }
 #activite section
 {
     display: flex;
-    padding: 1.25em;
 }
 /*Aside*/
 .texte_aside_font
@@ -195,10 +197,9 @@ header
 }
 .aside_hebergement
 {
-    padding: 1.25em;
     background-color: #F2F2F2;
     border-radius:1.25em;
-
+    width: 420px;
 }
 .column_aside
 {
@@ -207,8 +208,8 @@ header
 }
 .aside_card
 {
-    width:250px;
-    height: 121px;
+    width:343px;
+    height:145px;
     border-radius:1.25em;
     margin:1.12em;
     display: flex;
@@ -218,10 +219,18 @@ header
 }
 .aside_card img
 {
-    height:115px;
-    width:120px;
     border-radius:1.25em 0 0 1.25em ;
-    padding:5px;
+    width: 100%;
+    height: 100%;
+}
+.img_aside
+{
+    width:127px;
+    height: 134px;
+    overflow: hidden;
+    border-radius:1.25em 0 0 1.25em;
+    display: flex;
+    align-items: center;
 }
 aside p
 {
@@ -239,37 +248,22 @@ aside h1
 {
     background-color: #F2F2F2;
     border-radius:12px;
-    padding: 1.25em;
+    width: 880px;
+    display: flex;
+    flex-wrap:wrap;
 }
-article
-{ 
-    column-count:3;
-    margin:0; 
-}
-.h1H
-{
-    font-size:0.85em;
-    margin-left:30px;
-    margin-bottom:5px;
-}
-.article_hebergement h2
-{
-    font-size:1.1em;
-    font-weight: bold;
-    margin-left: 30px;
-}
+
+/* CARTE HEBERGEMENT h1,p,img */
 .card_heberg
 {
-    width:250px;
-    height:200;
+    width:246px;
+    height:200px;
     background-color:white;
     display: flex;
     align-items: center;
     flex-direction:column;
-    margin-bottom:1.25em;
     border-radius:1.25em;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
-    
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);  
 }
 
 .card_heberg h1
@@ -283,14 +277,20 @@ article
     font-size:0.7em;
 }
 .img_heberg img
+{  
+    width: 100%; 
+}
+.img_heberg
 {
-    margin:0.2em;
-    height:115px;
-    width:233px;
+    height: 115px;
+    overflow: hidden;
     border-radius:1.25em 1.25em 0 0;
+    margin:0.2em;
+    display: flex;
+    align-items: center;
 }
 
-/*stars*/
+/*STARS TOUTE PAGE*/
 .stars_blue
 {
     color:#0065FC;
