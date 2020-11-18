@@ -184,10 +184,6 @@ nav b
     display: flex;
     justify-content: space-between;
 }
-#activite section
-{
-    display: flex;
-}
 /*Aside*/
 .texte_aside_font
 {
@@ -199,48 +195,58 @@ nav b
 {
     background-color: #F2F2F2;
     border-radius:1.25em;
-    width: 420px;
+    width: 420px;  
 }
 .column_aside
 {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 532px;
 }
 .aside_card
 {
-    width:343px;
+    width:344px;
     height:145px;
     border-radius:1.25em;
-    margin:1.12em;
     display: flex;
     align-items: center;
-    padding-top:4px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
 }
 .aside_card img
 {
     border-radius:1.25em 0 0 1.25em ;
     width: 100%;
-    height: 100%;
+    height:100%;
 }
 .img_aside
 {
-    width:127px;
     height: 134px;
+    width: 127px;
+    margin:0.2em;
     overflow: hidden;
     border-radius:1.25em 0 0 1.25em;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-aside p
+.aside_hebergement p
 {
     margin:1.25em;
     font-size:0.7em;
 }
-aside h1
+.aside_hebergement h1
 {
     margin:1px;
     font-size:0.7em;
+}
+.texte_aside_font
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 93px;
 }
 
 /*hébergement article*/
@@ -249,15 +255,19 @@ aside h1
     background-color: #F2F2F2;
     border-radius:12px;
     width: 880px;
-    display: flex;
-    flex-wrap:wrap;
 }
 
 /* CARTE HEBERGEMENT h1,p,img */
+.all_card_heberg
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
 .card_heberg
 {
-    width:246px;
-    height:200px;
+    width:247px;
+    height:201px;
     background-color:white;
     display: flex;
     align-items: center;
@@ -334,20 +344,16 @@ footer h1
     margin-bottom:0;
 }
 
-/*Activité Section*/
-.activite_h1
-{
-    font-size:0.6em;
-    position: relative;
-    top:25px;
-    left:35px;
-}
-#activite
+/*Activite*/
+.all_activite
 {
     display: flex;
-    align-items: center;
 }
-#activite article
+.activite_1
+{
+    display: flex;
+}
+.activite_2
 {
     display: flex;
 }
@@ -363,45 +369,68 @@ footer h1
 /*Size card activite*/
 .activite_card_haute
 {
-    width: 300px;
+    width: 303px;
     height: 450px;
     background: white;
     border-radius:1.25em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
-    margin:1.25em;
 }
 .activite_card_medium
 {
-    width:235px ;
-    height:230px ;
+    width:303px ;
+    height:239px ;
     background-color:white;
-    margin:1.25em;
     border-radius:1.25em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
-    margin:1.25em;
 }
 .activite_card_small
 {
-    width:235px ;
+    width:303px ;
     height:165px ;
     background-color:white;
-    margin:1.25em;
     border-radius:1.25em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
-    margin:1.25em;
 }
 .activite_card_haute img
 {
-    width:300px ;
-    height:390px;
+   height: 100%;
+   overflow: hidden;
+   border-radius:1.25em 1.25em 0 0;
 }
+
 .activite_card_medium img
 {
-    width:235px ;
-    height:175px ;
+    width: 100%;
+
 }
 .activite_card_small img
 {
-    height:110px ;
-    width:235px;
+    width: 100%;
+}
+.activite_img_haute
+{
+    height: 390px;
+    width: 303px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.activite_img_medium
+{
+    height: 181px;
+    width: 303px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden; 
+}
+.activite_img_small
+{
+    height: 109px;
+    width: 303px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
 }
