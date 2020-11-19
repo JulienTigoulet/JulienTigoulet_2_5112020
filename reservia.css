@@ -27,13 +27,13 @@ a
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    margin-top:48px;
 }
 nav a
 {
     text-decoration: none;
     color:black;
-    padding-top:35px;
-    margin-top:10px;
+    padding-top:60px;
     padding-left:25px;
     padding-right:25px; 
 }
@@ -51,7 +51,6 @@ nav li
 nav ul
 {
     display: flex;
-    align-items: flex-end;
     color:#106FFC;   
 }
 nav b
@@ -63,10 +62,12 @@ nav b
 .texte_bandeau h1
 {
     font-size: 1.2em;
+    margin-top:43px;
 }
 .texte_bandeau p
 {
     font-size: 0.9em;
+    margin-bottom:20px;
 }
 
 /*recherche bouton*/
@@ -76,6 +77,7 @@ nav b
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom:20px;
 }
 
 .bouton label
@@ -115,7 +117,10 @@ nav b
     display: flex;
     list-style-type: none; 
 }
-
+.filtres p
+{
+    margin-right:8px;
+}
 .filtres li
 {
     border-top:2px solid #F2F2F2;
@@ -124,9 +129,9 @@ nav b
     border-radius:45px;
     display: flex;
     align-items: center;
-    margin-left: 30px;
-    padding-right: 10px;
-    height: 36px;
+    margin-left:24px;
+    padding-right:20px;
+    height: 46px;
 }
 .filtres li:hover
 {
@@ -142,19 +147,20 @@ nav b
 .filtres div
 {
     background-color:#DEEBFF;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 .filtres
 {
     display: flex;
     font-weight:bold;
     align-items:center;
+    margin-bottom:35px;
 }
 
 /*information*/
@@ -163,6 +169,7 @@ nav b
     display: flex;
     align-items: center;
     font-size: 0.85em;
+    margin-bottom:85px;
 }
 .info i
 {
@@ -177,7 +184,6 @@ nav b
     margin-right: 15px;
 }  
 
-/*Header*/
 /*Section*/
 #section_hebergement
 {
@@ -190,6 +196,10 @@ nav b
     display: flex;
     justify-content: space-between;
     font-size:1.8em;
+    margin-left:38px;
+    margin-right:39px;
+    margin-top:46px;
+    margin-bottom:26px;
 }
 .aside_hebergement
 {
@@ -202,7 +212,6 @@ nav b
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 532px;
 }
 .aside_card
@@ -213,6 +222,7 @@ nav b
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    margin-bottom:33px;
 }
 .aside_card img
 {
@@ -231,38 +241,55 @@ nav b
     align-items: center;
     justify-content: center;
 }
+
 .aside_hebergement p
 {
-    margin:1.25em;
     font-size:0.7em;
+    margin-top:14px;
+    margin-bottom:44px;
 }
 .aside_hebergement h1
 {
-    margin:1px;
     font-size:0.7em;
+    margin-top:19px;
 }
 .texte_aside_font
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 93px;
 }
 
 /*hébergement article*/
+
 .article_hebergement
 {
     background-color: #F2F2F2;
     border-radius:12px;
     width: 880px;
 }
-
+.titre_hebergement
+{
+    margin-top:47px;
+    margin-left:41px;
+    margin-bottom:23px;
+}
+#section_hebergement h2
+{
+    margin-left:44px;
+    margin-top:13px;
+}
 /* CARTE HEBERGEMENT h1,p,img */
+.legende_heberg
+{
+    width: 228px;
+}
 .all_card_heberg
 {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    margin-left:30px;
 }
 .card_heberg
 {
@@ -273,17 +300,19 @@ nav b
     align-items: center;
     flex-direction:column;
     border-radius:1.25em;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);  
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    margin-bottom:30px;
+    margin-right:30px;
 }
 
 .card_heberg h1
 {
-    margin:0;
     font-size:0.8em;
+    margin-top:12px;
+    margin-bottom:10px;
 }
 .card_heberg p
 {
-    margin:1px;
     font-size:0.7em;
 }
 .img_heberg img
@@ -348,6 +377,8 @@ footer h1
 .all_activite
 {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .activite_1
 {
@@ -362,9 +393,21 @@ footer h1
     font-weight: bold;
     margin-left:9px;
 }
-.activite_card img
+.activite_card_side
 {
-    border-radius:1.25em 1.25em 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.activite_h1
+{
+    font-size:0.9em;
+    margin-bottom:26px;
+}
+#activite
+{
+    margin-top:57px;
 }
 /*Size card activite*/
 .activite_card_haute
@@ -374,6 +417,7 @@ footer h1
     background: white;
     border-radius:1.25em;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    margin-right:42px;
 }
 .activite_card_medium
 {
@@ -394,14 +438,11 @@ footer h1
 .activite_card_haute img
 {
    height: 100%;
-   overflow: hidden;
-   border-radius:1.25em 1.25em 0 0;
 }
 
 .activite_card_medium img
 {
     width: 100%;
-
 }
 .activite_card_small img
 {
@@ -414,7 +455,8 @@ footer h1
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    border-radius:1.25em 1.25em 0 0;
 }
 .activite_img_medium
 {
@@ -423,7 +465,8 @@ footer h1
     display: flex;
     align-items:center;
     justify-content:center;
-    overflow: hidden; 
+    overflow: hidden;
+    border-radius:1.25em 1.25em 0 0;
 }
 .activite_img_small
 {
@@ -431,6 +474,7 @@ footer h1
     width: 303px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     overflow:hidden;
+    border-radius:1.25em 1.25em 0 0;
 }
