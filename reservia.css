@@ -512,7 +512,7 @@ footer h1
 
 
 /* Media querry Tablette, téléphone */
-@media all and (max-width:1024px){
+@media all and (max-width: 1024px){
     .page{
         width: 768px;
         margin:auto
@@ -532,13 +532,68 @@ footer h1
         flex-direction:column-reverse;
         justify-content: center;
         align-items: center;
+        margin-top:33px;
+        padding-bottom:33px;
+    }
+    #section_hebgergement h1,h2{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titre_hebergement{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
     }
     .aside_hebergement{
         width: 880px;
+        margin-bottom:33px;
+    }
+    .info{
+        margin:0;
+    }
+    .filtres ul{
+        width: 452px;
+        flex-flow:row wrap;
+    }
+    .filtres li{
+        margin-left:0;
+        margin-bottom:10px;
+        margin-right: 10px;
+        margin-top:10px;
+    }
+    .filtres{
+        flex-direction:column;
+        align-items: flex-start;
     }
     .column_aside{
         flex-flow:row wrap;
         justify-content: center;
         height: 350px;
+    }
+    .aside_card a{
+        margin-right:33px;
+    }
+    footer section{
+        margin:0;
+        margin-top:33px;
+
+    }
+}
+/* TELEPHONE */
+@media all and (max-width: 500px){
+    body{
+        color:red;
+    }
+
+    .page{
+        width: 425px;
+    }
+    footer{
+        
+        height: 487px;
+        width: 100%;
+        flex-direction:column;
     }
 }
