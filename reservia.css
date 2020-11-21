@@ -512,3 +512,33 @@ footer h1
 
 
 /* Media querry Tablette, téléphone */
+@media all and (max-width:1024px){
+    .page{
+        width: 768px;
+        margin:auto
+    }
+    .all_activite{
+        flex-direction:column;
+    }
+    .activite_1{
+        margin-bottom:40px;
+    }
+    .activite_h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #section_hebergement{
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .aside_hebergement{
+        width: 880px;
+    }
+    .column_aside{
+        flex-flow:row wrap;
+        justify-content: center;
+        height: 350px;
+    }
+}
