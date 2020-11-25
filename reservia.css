@@ -510,15 +510,14 @@ footer h1
     border-radius:1.25em 1.25em 0 0;
 }
 
-
-/* Media querry Tablette, téléphone */
+/* Media querry Tablette */
 @media all and (max-width: 1024px){
     .page{
-        width: 768px;
-        margin:auto
+       
     }
     .all_activite{
         flex-direction:column;
+        width:100%;
     }
     .activite_1{
         margin-bottom:40px;
@@ -547,7 +546,7 @@ footer h1
 
     }
     .aside_hebergement{
-        width: 880px;
+        width: 100%;;
         margin-bottom:33px;
     }
     .info{
@@ -570,7 +569,7 @@ footer h1
     .column_aside{
         flex-flow:row wrap;
         justify-content: center;
-        height: 350px;
+        height:100%;
     }
     .aside_card a{
         margin-right:33px;
@@ -578,22 +577,22 @@ footer h1
     footer section{
         margin:0;
         margin-top:33px;
-
+    }
+    .article_hebergement{
+        width:100%
     }
 }
-/* TELEPHONE */
-@media all and (max-width: 500px){
-    body{
-        color:red;
+}
+@media all and (max-width:767px){
+    #section_hebergement{
+        height: auto;
+    }
+    .all_card_heberg{
+        width:100%;
+    }
+    .activite_card_side{
+        flex-direction: column;
     }
 
-    .page{
-        width: 425px;
-    }
-    footer{
-        
-        height: 487px;
-        width: 100%;
-        flex-direction:column;
-    }
+
 }
