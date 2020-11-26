@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8" />
         <link rel="stylesheet" href="reservia.css" />
         <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
@@ -12,17 +14,17 @@
 
  <!-- Header -->
     <header>
-        <div id="Bandeau">
+        <div id="bandeau">
             <div class="navbar">
                 <img src="images/logo/Reservia.svg" alt="logo reservia">
             
-                <div class="Navigation">
+                <div class="navigation">
                     <nav>
                          <ul>
                              
                             <li><a href="#section_hebergement">Hébergements</a></li>
                             <li><a href="#activite">Activités</a></li>
-                            <li><a href="#"><b>S'inscrire</b></a></li>
+                            <div class="inscrire"><li><a href="#"><b>S'inscrire</b></a></li></div>
                          </ul>
                     </nav>
                 </div>
@@ -37,10 +39,11 @@
             <div class="bouton">
                 <div class="bouton_rechercher">
                     <label for="search">Rechercher</label>
+                    <i class="fas fa-search"></i>
                 </div>
                 <div class="bouton_input">
                     <input type="search"id="search" name="search" required
-                minlength="10" maxlength="15" size="15">
+                minlength="10" maxlength="20" size="15">
                 </div>
                 <div class="bouton_i">
                     <i class="fas fa-map-marker-alt"></i>
@@ -374,7 +377,7 @@
         <div class="activite_2">
 
             <div class="activite_card_haute">
-                <a href="">
+                <a href="#">
                 <div class="activite_card">
                     <div class="activite_img_haute">
                         <img src="images/activites/4small/ParcNationnaldesCalanques.jpg" alt="Parc Nationnal des Calanques">

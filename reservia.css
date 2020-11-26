@@ -28,6 +28,7 @@ a
     flex-direction: row;
     justify-content:space-between;
     margin-top:48px;
+    flex-wrap:wrap;
 }
 nav a
 {
@@ -51,7 +52,10 @@ nav li
 nav ul
 {
     display: flex;
-    color:#106FFC;   
+    color:#106FFC;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
 nav b
 {
@@ -79,13 +83,20 @@ nav b
     align-items: center;
     margin-bottom:20px;
 }
-
+.bouton_rechercher i
+{
+    visibility: hidden;
+}
+.bouton_rechercher
+{
+    display: flex;
+}
 .bouton label
 {
     color: white;
     background-color: #0065FC;
     width: 110px;
-    height:35px;
+    height:51px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,9 +107,9 @@ nav b
 .bouton i
 {
     background-color: #F2F2F2 ;
-    width: 35px;
-    height:35px;
-    border-radius: 6px 0 0 6px;
+    width: 51px;
+    height:51px;
+    border-radius: 12px 0 0 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +118,9 @@ nav b
 .bouton input
 {
   border:2px solid #F2F2F2;
-  height:35px;
+  height:51px;
+  border-right:none;
+  width:230px;
 }
 
 /* filtres */
@@ -394,10 +407,12 @@ footer h1
 .activite_1
 {
     display: flex;
+    flex-wrap:wrap;
 }
 .activite_2
 {
     display: flex;
+    flex-wrap:wrap;
 }
 .activite_card p
 {
@@ -512,9 +527,6 @@ footer h1
 
 /* Media querry Tablette */
 @media all and (max-width: 1024px){
-    .page{
-       
-    }
     .all_activite{
         flex-direction:column;
         width:100%;
@@ -553,7 +565,6 @@ footer h1
         margin:0;
     }
     .filtres ul{
-        width: 452px;
         flex-flow:row wrap;
     }
     .filtres li{
@@ -581,18 +592,94 @@ footer h1
     .article_hebergement{
         width:100%
     }
+    .all_card_heberg{
+        margin-left: 0px;
+    }
 }
-}
+
 @media all and (max-width:767px){
-    #section_hebergement{
+    .inscrire{
+        order:-1;
+        position: absolute;
+        top:0px;
+        right:0px;
+    }
+    .activite_1{
+        justify-content: center;
+    }
+    .activite_2{
+        justify-content: center;
+    }
+    .aside_card a {
+        margin: 5px;
+    }
+    .card_heberg{
+        margin:5px;
+    }
+    nav a{
+        padding:0px;
+        margin:0px;
+    }
+    .navbar{
+        margin:0px;
+        flex-direction: column;
+        justify-content: start;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav li{
+        margin:0px;
+        display:flex;
+        justify-content: center;
+        padding:12px;
+        border-bottom: 2px solid #d0d0d0;
+    }
+    .navbar img{
+        width:97px;
+        margin-left:21px;
+        margin-top:32px;
+        margin-bottom:10px;
+    }
+    nav a:hover{
+        border:none;
+    }
+    nav li:hover{
+        border-bottom:2px solid #0065FC;
+    }
+    nav li:last-child{
+        border:none;
+        margin-top:32px;
+        margin-right: 8px;
+    }
+    .texte_bandeau h1 {
+        margin-top: 36px;
+    }
+    .texte_bandeau p {
+        margin-bottom: 38px;
+        margin-top:16px;
+    }
+    footer{
+        flex-direction:column;
         height: auto;
     }
-    .all_card_heberg{
-        width:100%;
+    .bouton_rechercher label{
+        display: none;
     }
-    .activite_card_side{
-        flex-direction: column;
+    .bouton_rechercher i{
+        visibility: visible;
+        width: 51px;
+        height: 51px;
+        color:white;
+        background-color:#0065FC;
+        border-radius:20px;
     }
-
-
+    .bouton{
+        justify-content: center;
+    }
+    .texte_bandeau{
+        margin-left:20px;
+    }
+    
 }
