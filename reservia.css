@@ -603,7 +603,7 @@ footer h2
 }
 
 @media all and (max-width:767px){
-    .inscrire{
+    nav li:last-child{
         order:-1;
         position: absolute;
         top:0px;
@@ -716,7 +716,6 @@ footer h2
     }
     #section_hebergement h2{
         margin-left:20px;
-        font-size: 1.7em;
     }
     /* ACTIVITE */
     #activite{
