@@ -34,9 +34,7 @@ nav a
 {
     text-decoration: none;
     color:black;
-    padding-top:60px;
-    padding-left:25px;
-    padding-right:25px; 
+    padding:60px 25px 0px 25px;
 }
 nav a:hover
 {
@@ -101,7 +99,7 @@ nav b
     align-items: center;
     justify-content: center;
     border-radius:0 12px 12px 0;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .bouton i
@@ -276,10 +274,14 @@ nav b
     margin-top:14px;
     margin-bottom:44px;
 }
-.aside_hebergement h1
+.aside_hebergement h2
 {
     font-size:0.7em;
     margin-top:19px;
+}
+.aside_hebergement h3
+{
+    font-size: 0.7em;
 }
 .texte_aside_font
 {
@@ -301,13 +303,14 @@ nav b
     margin-top:47px;
     margin-left:41px;
     margin-bottom:23px;
+    font-size: 1em;
 }
-#section_hebergement h2
+.article_hebergement h3
 {
     margin-left:44px;
     margin-top:13px;
 }
-/* CARTE HEBERGEMENT h1,p,img */
+/* CARTE HEBERGEMENT h2,p,img */
 .legende_heberg
 {
     margin-left:16px;
@@ -333,7 +336,7 @@ nav b
 {
     box-shadow: 0 0px 15px rgba(0, 0, 0, .5);
 }
-.card_heberg h1
+.card_heberg h4
 {
     font-size:0.8em;
     margin-top:12px;
@@ -396,7 +399,7 @@ footer li
     list-style-type: none;
     padding:7px;
 }
-footer h1
+footer h2
 {
     font-size:1em;
     padding:7px;
@@ -447,9 +450,8 @@ footer h1
     box-shadow: 0 0px 15px rgba(0, 0, 0, .5);
     border-radius:1.25em;
 }
-.activite_h1
+.activite_h2
 {
-    font-size:0.9em;
     margin-bottom:26px;
 }
 #activite
@@ -540,7 +542,7 @@ footer h1
     .activite_1{
         margin-bottom:40px;
     }
-    .activite_h1{
+    .activite_h2{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -551,11 +553,6 @@ footer h1
         align-items: center;
         margin-top:33px;
         padding-bottom:33px;
-    }
-    #section_hebgergement h1,h2{
-        display:flex;
-        justify-content: center;
-        align-items: center;
     }
     .titre_hebergement{
         display:flex;
@@ -569,6 +566,7 @@ footer h1
     }
     .info{
         margin:0;
+        margin-left:20px;
     }
     .filtres ul{
         flex-flow:row wrap;
@@ -582,6 +580,7 @@ footer h1
     .filtres{
         flex-direction:column;
         align-items: flex-start;
+        margin-left:20px;
     }
     .column_aside{
         flex-flow:row wrap;
@@ -695,9 +694,6 @@ footer h1
         margin-right:20px;
         margin-bottom:30px;
     }
-    .aside_hebergement h1{
-        margin:0px;
-    }
     .font_aside{
         font-size: 0.7em;
     }
@@ -719,18 +715,17 @@ footer h1
         margin-bottom:12px;
     }
     #section_hebergement h2{
-        margin:0px;
-        justify-content: flex-start;
         margin-left:20px;
-        margin-top:13px;
+        font-size: 1.7em;
     }
     /* ACTIVITE */
     #activite{
         margin-bottom:0px;
     }
-    .activite_h1{
+    .activite_h2{
         justify-content: flex-start;
-        margin-left:20px;
+        margin-left:45px;
+        font-size:1em;
     }
     .activite_1{
         justify-content: center;
